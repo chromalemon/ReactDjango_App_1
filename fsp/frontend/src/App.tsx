@@ -16,7 +16,7 @@ function App() {
 
     useEffect(() => {
         const foodsListUrl = 'http://localhost:8000/menu/'
-        axios.get<FoodItem[]>(foodsListUrl)
+        axios.get<FoodItem[]>(foodsListUrl) 
             .then(response => setFoods(response.data))
     }, [])
 
